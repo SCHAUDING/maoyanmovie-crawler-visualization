@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>猫眼电影票房榜数据可视化大屏</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>猫眼电影票房榜数据可视化大屏</h1>
+        </header>
+        <nav class="top-nav">
+            <ul>
+                <li><a href="#box-office">票房榜前十</a></li>
+                <li><a href="#region">出品地区分布</a></li>
+                <li><a href="#yearly">各年总票房数统计</a></li>
+                <li><a href="#genre">电影类型统计</a></li>
+                <li><a href="#rating">票房与评分关系</a></li>
+                <li><a href="#price">票价与观影人数关系</a></li>
+            </ul>
+        </nav>
+        <main class="content">
+            <div class="chart-container" id="typeCharts">
+                <iframe src="html/电影类型分布饼图.html" class="chart-frame half-width" loading="lazy"></iframe>
+                <iframe src="html/电影类型词云.html" class="chart-frame half-width" loading="lazy"></iframe>
+            </div>
+            <iframe id="chartFrame" src="html/电影票房榜前10柱状图.html" class="chart-frame" loading="lazy"></iframe>
+            <iframe id="mapFrame" src="html/电影发行地区地图.html" class="chart-frame map-frame" loading="lazy"></iframe>
+            <iframe id="yearlyFrame" src="html/各年各电影票房总合折线图.html" class="chart-frame" loading="lazy"></iframe>
+            <iframe id="scatterFrame" src="html/电影票房与评分散点图.html" class="chart-frame full-height" loading="lazy"></iframe>
+            <iframe id="priceFrame" src="html/电影票价和观影人数散点图.html" class="chart-frame" loading="lazy"></iframe>
+        </main>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html> 

@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    font-family: "Microsoft YaHei", sans-serif;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.header {
+    background-color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    margin: 0;
+    color: #333;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.top-nav {
+    background-color: #fff;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.top-nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.top-nav li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.top-nav li a:hover {
+    background-color: #1890ff;
+    color: #fff;
+}
+
+.content {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* margin: 0 20px; */
+    /* padding: 20px; */
+    width: 100%;
+}
+
+.section {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.section.active {
+    display: block;
+}
+
+iframe {
+    border: none;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+    transition: display 0.3s ease;
+}
+
+#scatterFrame {
+    min-height: 600px;
+}
+
+.chart-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.chart-container {
+    display: flex;
+    display: none;
+}
+
+#mapFrame,
+#yearlyFrame,
+#scatterFrame,
+#priceFrame {
+    display: none;
+}
+
+/* 保持其他 iframe 的共同样式不变 */
+iframe {
+    border: none;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+    transition: display 0.3s ease;
+}
+
+.chart-frame {
+    border: none;  /* 替代 frameborder="0" */
+    width: 100%;
+    height: 600px;
+}
+
+.half-width {
+    width: 50%;
+}
+
+.map-frame {
+    height: 800px;
+}
+
+.full-height {
+    height: 100vh;
+}
